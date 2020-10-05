@@ -1,0 +1,309 @@
+/* ================================= 
+  WEB FONTS
+==================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+/* ================================= 
+  ELEMENT STYLES
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  color: #404040;
+
+  font-size: 1.6em;
+  margin-bottom: 1.25em;
+}
+p {
+  color: white;
+
+  font-size: 1.2em;
+  margin-bottom: 1.25em;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #3b80d1;
+}
+hr {
+  border: 0;
+  height: 0;
+  margin: 2.3em 0 2em 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* FORM & BUTTON STYLES -------- */
+
+.home a,
+input,
+button {
+  padding: .5em;
+  font-size: .9em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  border: solid 1px #ccc;
+  outline: none;
+}
+button {
+  color: white;
+  background: #4188dc;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  border-color: rgba(0,0,0, .1);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* this is optional and should be different for every project */
+}
+
+/* ================================= 
+  LAYOUT & PAGE STYLES
+==================================== */
+body {
+  background: linear-gradient(to top, rgba(90, 24, 104, 0.7), rgba(90, 24, 104, 0.7)), url('./images/placeimg.jpg') no-repeat center center/cover;
+}
+
+.container {
+  width: 95%;
+  max-width: 80%;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-top: 4em;
+  margin: 0 auto 2em;
+  /* background-color: rgb(4, 86, 100); */
+  /* background-color: rgb(102, 154, 163); */
+  border-radius: .5em;
+  /* box-shadow: 0 3px rgba(0,0,0, .1); */
+  overflow: hidden;
+  
+}
+header {
+  background: #edeff0;
+  margin-bottom: 2em;
+}
+.main-content {
+  padding: 1em 2em;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.course {
+  margin-bottom: 1em;
+}
+
+.profile h1{
+  margin: 10% 0 50px;
+  font-family: 'Varela Round', Arial, Sans-Serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+}
+
+.profile p{
+  font-family: 'Varela Round', Arial, Sans-Serif;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}
+
+.about p{
+  font-family: 'Varela Round', Arial, Sans-Serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* IMAGES -------- */
+
+.course-img {
+  width: 70px;
+}
+.teacher-img {
+  width: 100%;
+  border-radius: .3em;
+}
+.not-found {
+  text-align: center;
+}
+
+/* MAIN NAV -------- */
+
+.main-nav a {
+  width: 100%;
+  font-size: .95em;
+  color: #D8BFD8;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em 2em 1em 1em;
+  transition: .2s;
+  overflow: hidden;
+  /* background-color: rgb(4, 86, 100); */
+  
+}
+/* .main-nav a:hover,
+.main-nav .active {
+  color: #fff;
+  background: #3b80d1;
+} */
+
+.nav-container {
+  width: 100%
+}
+
+/* COURSE NAV -------- */
+
+.course-nav li {
+  display: inline-block;
+}
+.course-nav li + li {
+  margin-left: .6em;
+}
+.course-nav a {
+  font-size: .85em;
+  color: #7d7d7d;
+  padding: .2em .8em;
+  border-radius: .25em;
+  background: #eaebeb;
+  transition: .2s;
+}
+.course-nav a:hover,
+.course-nav a.active {
+  color: #fff;
+  background: #39add1;
+}
+
+/* ICONS -------- */
+
+.icn-logo {
+  background: #54606b;
+  color: #fff;
+}
+.icn-logo i {
+  font-size: 2.45em;
+  line-height: 0;
+  margin-top: 30px;
+}
+.icn-error {
+  font-size: 3.2em;
+  margin-bottom: .25em;
+}
+
+
+/* ================================= 
+  MEDIA QUERIES
+==================================== */
+
+@media (min-width: 0) and (max-width: 768px) { 
+  /* body {
+    /* padding-top: .8em; */
+    /* background-color: rgb(4, 86, 100);
+  } */ */
+  .home a {
+    border-color: transparent;
+  }
+   .icn-logo {
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding-bottom: 4px;
+   }
+   
+   /* .main-nav a:hover {
+     border-color: rgba(0,0,0, .1);
+   } */
+   .courses h2 {
+     margin-bottom: 0;
+   }
+   .course-nav {
+     display: block;
+     margin: 1.5em 0 3.2em;
+   }
+   .home a,
+   input,
+   button {
+     display: block;
+     width: 100%;
+     margin-bottom: 1em;
+   }
+}
+@media (min-width: 769px) {
+  body {
+    background: linear-gradient(to top, rgba(90, 24, 104, 0.7), rgba(90, 24, 104, 0.7)), url('./images/placeimg.jpg') no-repeat center center/cover;
+  }
+  
+  .media img,
+  .media > div,
+  .teacher {
+    float: left;
+  }
+  .media > div {
+    width: 85.1%;
+    margin-left: 1.5em;
+  } 
+  .teacher {
+    width: 48.73%;
+    margin-bottom: 1.5em;
+  }
+  .teacher + .teacher {
+    margin-left: 2.54%;
+  }
+  .teacher:nth-child(2n+3) {
+    clear: left;
+    margin-left: 0;
+  }
+  /* MAIN NAV -------- */
+  .icn-logo {
+    margin-right: auto;
+    padding: 0 2em;
+  }
+  header,
+  .main-nav {
+    width: 100%;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    overflow: hidden;
+    /* background-color: rgb(4, 86, 100); */
+    /* background: linear-gradient(to top, rgb(4, 86, 100) ,rgba(226, 225, 235, 0.4)); */
+    /* background: rgba(4, 86, 100, 0.7); */
+    background: rgba(0, 0, 0);
+  }
+  /* .main-nav a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    padding: 1.25em 1.5em;
+  } */
+  /* .main-nav a:hover {
+    border-color: rgba(0,0,0, .1);
+  } */
+  /* COURSE NAV -------- */
+  .course-nav {
+    float: right;
+  } 
+  .courses h2 {
+    float: left;
+  }
+}
