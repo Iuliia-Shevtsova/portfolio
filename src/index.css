@@ -44,6 +44,10 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
+li {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
 /* FORM & BUTTON STYLES -------- */
 
 .home a,
@@ -65,6 +69,11 @@ button {
   cursor: pointer;
   border-color: rgba(0,0,0, .1);
 }
+
+/* .btn_color {
+  background-color: rgb(165, 14, 165);
+  border: solid 1px rgb(80, 6, 80);;
+} */
 
 .sticky {
   position: sticky;
@@ -93,6 +102,18 @@ body {
   overflow: hidden;
   
 }
+
+.contact {
+  width: 60%;
+  max-width: 80%;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  /* padding-top: 4em; */
+  margin: 0 auto 2em;
+  color: white;
+}
+
+
 header {
   background: #edeff0;
   margin-bottom: 2em;
@@ -135,15 +156,44 @@ header {
   margin-right: 20%;
 }
 
+.footer{
+  background: black;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.contact_link{
+  padding-right: .5rem;
+  padding-left: .5rem;
+  font-size: 1.5rem;
+  color: #D8BFD8;
+}
+
 /* IMAGES -------- */
 
-.course-img {
-  width: 70px;
+/* img {
+  width: 50%;
+} */
+
+.img_about {
+  width: 200px;
+  box-shadow: inset 0px 0px 10px 10px red ;
+  /* padding: 5px; */
+  
 }
-.teacher-img {
-  width: 100%;
-  border-radius: .3em;
-}
+
 .not-found {
   text-align: center;
 }
@@ -157,12 +207,19 @@ header {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  padding: 1em 2em 1em 1em;
+  padding: 0.8em 2em 0.8em 1em;
   transition: .2s;
   overflow: hidden;
   /* background-color: rgb(4, 86, 100); */
   
 }
+
+.main-nav i {
+  font-size: 20px;
+  color: white;
+}
+
+
 /* .main-nav a:hover,
 .main-nav .active {
   color: #fff;
